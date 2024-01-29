@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-01-29T14:50:49.432813" rpa="false" schemaversion="5">
+<suite id="s1" name="Testrobotframe" source="C:\Testrobotframe">
+<suite id="s1-s1" name="Testyaowalak" source="C:\Testrobotframe\Testyaowalak.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-29T14:50:49.749795" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com'.</msg>
+<arg>http://automationexercise.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T14:50:49.747752" elapsed="5.980000"/>
+</kw>
+<test id="s1-s1-t1" name="Home page with valid info" line="51">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:50:55.733606" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T14:50:55.733606" elapsed="1.809391"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:50:57.551009" level="INFO">Opening url 'http://automationexercise.com'</msg>
+<arg>${$url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-01-29T14:50:57.542997" elapsed="5.898663"/>
+</kw>
+<kw name="Clike Contact Element">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:03.446749" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[8]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[8]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:03.444795" elapsed="1.522627"/>
+</kw>
+<status status="PASS" start="2024-01-29T14:51:03.443734" elapsed="1.523688"/>
+</kw>
+<kw name="Input name">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:04.973477" level="INFO">Typing text 'Testfern' into text field '//*[@name="name"]'.</msg>
+<arg>//*[@name="name"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:04.973477" elapsed="0.214281"/>
+</kw>
+<arg>${name}</arg>
+<status status="PASS" start="2024-01-29T14:51:04.967422" elapsed="0.220336"/>
+</kw>
+<kw name="Input email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:05.187758" level="INFO">Typing text 'Farnji77@gmail.com' into text field '//*[@name="email"]'.</msg>
+<arg>//*[@name="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:05.187758" elapsed="0.129520"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2024-01-29T14:51:05.187758" elapsed="0.129520"/>
+</kw>
+<kw name="Input subject">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:05.317278" level="INFO">Typing text 'ระบบขัดข้อง' into text field '//*[@name="subject"]'.</msg>
+<arg>//*[@name="subject"]</arg>
+<arg>${subject}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:05.317278" elapsed="0.171168"/>
+</kw>
+<arg>${subject}</arg>
+<status status="PASS" start="2024-01-29T14:51:05.317278" elapsed="0.171895"/>
+</kw>
+<kw name="Input message">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:05.489173" level="INFO">Typing text 'กดของใส่ตะกร้าไม่ได้' into text field '//*[@name="message"]'.</msg>
+<arg>//*[@name="message"]</arg>
+<arg>${message}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:05.489173" elapsed="0.141044"/>
+</kw>
+<arg>${message}</arg>
+<status status="PASS" start="2024-01-29T14:51:05.489173" elapsed="0.141044"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-01-29T14:51:05.630929" level="INFO">Sending C:\Testrobotframe\1_137.jpg to browser.</msg>
+<arg>${btnSelectWordfile}</arg>
+<arg>C:\\Testrobotframe${/}${imgFile}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-01-29T14:51:05.630929" elapsed="0.030073"/>
+</kw>
+<doc>Verify that home page is visible successfully</doc>
+<status status="PASS" start="2024-01-29T14:50:55.729589" elapsed="9.931413"/>
+</test>
+<doc>This is a sample test suite using Robot Framework</doc>
+<status status="PASS" start="2024-01-29T14:50:49.468155" elapsed="16.201185"/>
+</suite>
+<status status="PASS" start="2024-01-29T14:50:49.435321" elapsed="16.234019"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testrobotframe">Testrobotframe</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Testyaowalak">Testrobotframe.Testyaowalak</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
